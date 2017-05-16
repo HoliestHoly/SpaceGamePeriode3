@@ -41,6 +41,7 @@ view_yview[0] = view_yview[0] + ((objectPlayer.y-(view_hview[0]/2)) - view_yview
 #define scr_create_objects_initialize
 instance_create(0, 0, obj_spawner);
 instance_create(0, 0, obj_camera);
+instance_create(0, 0, obj_timer);
 
 #define scr_enemy_initialize
 randomize();
@@ -55,4 +56,53 @@ if smallMass <= 5 {
 massImageScaler = mass / 1000;
 image_xscale = massImageScaler;
 image_yscale = massImageScaler;
+
+#define scr_timer_initialize
+seconds = 0;
+secondsDraw = "";
+minutes = 5;
+minutesDraw = "";
+
+timerUpdate = room_speed;
+
+timerColor = c_white;          //c_colorname
+timerHalign = fa_center;       //fa_left; fa_center; fa_right;     //horizontal alignment
+timerValign = fa_middle;       //fa_top; fa_middle; fa_bottom;     //verticle alignment
+timerFont = fnt_test;
+timerX = view_wview[0]/2;
+timerY = 100;
+timerText = "";                //Change timer text in update
+
+#define scr_timer_update
+if timerUpdate <= 0 {
+    if seconds <= 0 {
+        seconds = 59;
+        
+        if minutes > 0 {
+            minutes--;
+        }
+    } else {
+        seconds--;
+    }
+    
+    timerUpdate = room_speed;
+}
+
+if seconds < 10 {
+    secondsDraw = "0" + string(seconds);
+} else {
+    secondsDraw = string(seconds);
+}
+minutesDraw = string(minutes);
+
+timerText = "time left: " + minutesDraw + ":" + secondsDraw;
+
+timerUpdate--;
+
+#define scr_timer_draw_gui
+draw_set_color(timerColor);
+draw_set_halign(timerHalign);
+draw_set_valign(timerValign);
+draw_set_font(timerFont);
+draw_text(timerX, timerY, timerText);
 
