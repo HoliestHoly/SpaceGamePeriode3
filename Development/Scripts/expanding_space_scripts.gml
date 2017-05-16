@@ -1,6 +1,6 @@
 #define scr_spawner_initialize
 objectEnemy = obj_enemy;
-maxEnemies = 100;
+maxEnemies = 500;
 
 #define scr_spawner_update
 scr_spawn_enemies();
@@ -41,4 +41,18 @@ view_yview[0] = view_yview[0] + ((objectPlayer.y-(view_hview[0]/2)) - view_yview
 #define scr_create_objects_initialize
 instance_create(0, 0, obj_spawner);
 instance_create(0, 0, obj_camera);
+
+#define scr_enemy_initialize
+randomize();
+
+smallMass = random(10);
+
+if smallMass <= 5 {
+    mass = random_range(10, 200);
+} else {
+    mass = random_range(300, mass_goal-200);
+}
+massImageScaler = mass / 1000;
+image_xscale = massImageScaler;
+image_yscale = massImageScaler;
 
