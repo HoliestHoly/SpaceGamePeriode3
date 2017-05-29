@@ -1,22 +1,22 @@
-if(keyboard_check(MOVEMENT_UP) && yMoveSpeedCurrent >= -17)
+if(keyboard_check(MOVEMENT_UP) && yMoveSpeedCurrent >= -MoveSpeedMax)
 {
      yMoveSpeedCurrent -= moveSpeed;
 
 
 }
-if(keyboard_check(MOVEMENT_DOWN) && yMoveSpeedCurrent <= 17)
+if(keyboard_check(MOVEMENT_DOWN) && yMoveSpeedCurrent <= MoveSpeedMax)
 {
     yMoveSpeedCurrent += moveSpeed;
 
   
 }
-if(keyboard_check(MOVEMENT_LEFT) && xMoveSpeedCurrent >= -17)
+if(keyboard_check(MOVEMENT_LEFT) && xMoveSpeedCurrent >= -MoveSpeedMax)
 {
     xMoveSpeedCurrent -= moveSpeed;
 
   
 }
-if(keyboard_check(MOVEMENT_RIGHT) && xMoveSpeedCurrent <= 17)
+if(keyboard_check(MOVEMENT_RIGHT) && xMoveSpeedCurrent <= MoveSpeedMax)
 {
     xMoveSpeedCurrent += moveSpeed;
 

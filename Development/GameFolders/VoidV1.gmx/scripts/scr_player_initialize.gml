@@ -1,4 +1,5 @@
-moveSpeed = 0.3;
+moveSpeed = 0.4;
+MoveSpeedMax = 8;
 moveSpeedDecFactor = 0.98
 yMoveSpeedCurrent = 0;
 xMoveSpeedCurrent = 0;
@@ -10,7 +11,6 @@ image_xscale = massImageScaler;
 image_yscale = massImageScaler;
 playerOffsetX = 500;
 playerOffsetY = 500;
-enemyColliding = noone;
 
 fix = physics_fixture_create();
 physics_fixture_set_circle_shape(fix, mass/2);
