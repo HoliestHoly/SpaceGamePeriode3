@@ -61,7 +61,7 @@
     </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\fnt_test</font>
+    <font>fonts\fnt_normal</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_create_objects</object>
@@ -75,7 +75,7 @@
   <rooms name="rooms">
     <room>rooms\rm_level_1</room>
   </rooms>
-  <constants number="12">
+  <constants number="13">
     <constant name="MASS_GOAL">1000</constant>
     <constant name="MAX_ENEMIES">500</constant>
     <constant name="OBJECT_ENEMY">obj_enemy</constant>
@@ -88,6 +88,7 @@
     <constant name="MOVEMENT_DOWN">ord("S")</constant>
     <constant name="MOVEMENT_LEFT">ord("A")</constant>
     <constant name="MOVEMENT_RIGHT">ord("D")</constant>
+    <constant name="FONT">fnt_normal</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
