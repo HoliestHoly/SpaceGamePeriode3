@@ -10,6 +10,7 @@ image_xscale = massImageScaler;
 image_yscale = massImageScaler;
 playerOffsetX = 500;
 playerOffsetY = 500;
+enemyColliding = noone;
 
 fix = physics_fixture_create();
 physics_fixture_set_circle_shape(fix, mass/2);
