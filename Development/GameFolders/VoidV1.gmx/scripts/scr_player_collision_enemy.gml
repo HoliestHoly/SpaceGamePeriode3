@@ -4,7 +4,7 @@ var massReduction = mass / 100;
 var massReductionEnemy = other.mass / 100;
 
 with other {
-    if mass >= OBJECT_PLAYER.mass - OBJECT_PLAYER.massRange && mass <= OBJECT_PLAYER.mass + OBJECT_PLAYER.massRange {
+    if mass >= OBJECT_PLAYER.mass - OBJECT_PLAYER.massRange {
         phy_speed_x = spdx/5;
         phy_speed_y = spdy/5;
         if phy_speed_x = 0 && phy_speed_y = 0 {
@@ -16,6 +16,7 @@ with other {
         if mass <= OBJECT_PLAYER.massRangeInstaKill {
             OBJECT_PLAYER.mass += mass / 2;
             OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass / 2;
+            part_particles_create(obj_particles.partSys[1], x, y, obj_particles.partType[2], 25);
             instance_destroy();
         } else {
             mass -= massReductionEnemy;
@@ -24,14 +25,12 @@ with other {
     }
 }
 
-if other.mass >= mass - massRange && other.mass <= mass + massRange {
+if other.mass >= mass - massRange {
     phy_speed_x = -spdx/5;
     phy_speed_y = -spdy/5;
     xMoveSpeedCurrent = -xMoveSpeedCurrent/5;
     yMoveSpeedCurrent = -yMoveSpeedCurrent/5;
 }
-
-part_particles_create(obj_particles.partSys[1], x, y, obj_particles.partType[2], 10);
 
 if alarm[0] <= 0 {
     alarm[0] = 3;
