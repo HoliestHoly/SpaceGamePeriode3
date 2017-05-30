@@ -24,8 +24,8 @@ with other {
             OBJECT_PLAYER.mass += massReductionEnemy;
         }
     } else if(mass > OBJECT_PLAYER.mass){
-    mass += massReduction;
-    OBJECT_PLAYER.mass -=massReduction;
+        mass += massReduction;
+        OBJECT_PLAYER.mass -= massReduction;
     }
 }
 
