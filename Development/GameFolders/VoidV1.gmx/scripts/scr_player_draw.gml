@@ -13,4 +13,7 @@ draw_rectangle(0, 0, room_width, room_height, true);
 draw_set_color(c_red);
 draw_rectangle(playerOffsetX, playerOffsetY, room_width-playerOffsetX, room_height-playerOffsetY, true);
 
+draw_set_color(c_aqua);
 draw_text(view_xview[0]+32, view_yview[0]+100, fps);
+draw_text(view_xview[0]+32, view_yview[0]+100+32*1, view_wview[0]);
+draw_text(view_xview[0]+32, view_yview[0]+100+32*2, view_hview[0]);
