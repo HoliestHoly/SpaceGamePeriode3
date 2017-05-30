@@ -2,7 +2,6 @@ var spdx = xMoveSpeedCurrent;
 var spdy = yMoveSpeedCurrent;
 var massReduction = mass / 100;
 var massReductionEnemy = other.mass / 100;
-enemyColliding = other;
 
 with other {
     if mass >= OBJECT_PLAYER.mass - OBJECT_PLAYER.massRange {
