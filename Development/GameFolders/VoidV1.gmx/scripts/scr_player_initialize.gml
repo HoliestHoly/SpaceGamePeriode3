@@ -7,8 +7,8 @@ mass = 100;
 massImageScaler = mass / 1000;
 massRange = mass / 20;
 massRangeInstaKill = mass / 2;
-image_xscale = massImageScaler;
-image_yscale = massImageScaler;
+//image_xscale = massImageScaler;
+//image_yscale = massImageScaler;
 playerOffsetX = 500;
 playerOffsetY = 500;
 
