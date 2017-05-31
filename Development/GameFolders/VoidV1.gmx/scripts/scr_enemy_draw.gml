@@ -3,7 +3,7 @@ draw_self();
 draw_set_color(c_aqua);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(x,y,mass);
+//draw_text(x,y,mass);
 /*draw_set_color(c_blue);
 draw_circle(x, y, mass/2, true);*/
 

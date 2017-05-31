@@ -9,9 +9,27 @@ if(OBJECT_PLAYER.mass < 250){
     }
 }
 
+if(mass < 100){
+    sprChooser = round(random_range(1,4));
+
+    if(sprChooser = 1){
+        sprite_index = spr_enemy_small_1;
+    }
+    else if(sprChooser = 2){
+        sprite_index = spr_enemy_small_2;
+    }
+    else if(sprChooser = 3){
+        sprite_index = spr_enemy_small_3;
+    }
+    else if(sprChooser = 4){
+        sprite_index = spr_enemy_small_4;
+    }
+}
+
+
 massImageScaler = mass / 1000;
-image_xscale = massImageScaler;
-image_yscale = massImageScaler;
+/*image_xscale = massImageScaler;
+image_yscale = massImageScaler;*/
 
 fix = physics_fixture_create();
 physics_fixture_set_circle_shape(fix, mass/2);

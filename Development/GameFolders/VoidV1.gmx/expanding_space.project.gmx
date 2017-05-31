@@ -4,16 +4,34 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\snd_music</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_enemy</sprite>
-    <sprite>sprites\spr_player_1</sprite>
-    <sprite>sprites\spr_player_2</sprite>
-    <sprite>sprites\spr_player_3</sprite>
-    <sprite>sprites\spr_player_4</sprite>
-    <sprite>sprites\spr_player_5</sprite>
-    <sprite>sprites\spr_player_6</sprite>
-    <sprite>sprites\spr_cloud</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_player_1</sprite>
+      <sprite>sprites\spr_player_2</sprite>
+      <sprite>sprites\spr_player_3</sprite>
+      <sprite>sprites\spr_player_4</sprite>
+      <sprite>sprites\spr_player_5</sprite>
+      <sprite>sprites\spr_player_6</sprite>
+    </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_enemy_small_1</sprite>
+      <sprite>sprites\spr_enemy_small_2</sprite>
+      <sprite>sprites\spr_enemy_small_3</sprite>
+      <sprite>sprites\spr_enemy_small_4</sprite>
+      <sprite>sprites\spr_enemy_1</sprite>
+      <sprite>sprites\spr_enemy_2</sprite>
+      <sprite>sprites\spr_enemy_3</sprite>
+      <sprite>sprites\spr_enemy_4</sprite>
+    </sprites>
+    <sprites name="Other">
+      <sprite>sprites\spr_cloud</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -64,23 +82,37 @@
       <script>scripts\scr_particles_initialize.gml</script>
       <script>scripts\scr_particles_destroy.gml</script>
     </scripts>
+    <scripts name="Music">
+      <script>scripts\scr_music_initialize.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\fnt_normal</font>
+    <fonts name="Normal Fonts">
+      <font>fonts\fnt_normal</font>
+    </fonts>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_create_objects</object>
-    <object>objects\obj_spawner</object>
-    <object>objects\obj_camera</object>
-    <object>objects\obj_timer</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_particles</object>
+    <objects name="Initialize Objects">
+      <object>objects\obj_create_objects</object>
+      <object>objects\obj_spawner</object>
+      <object>objects\obj_music</object>
+      <object>objects\obj_particles</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+      <object>objects\obj_camera</object>
+    </objects>
+    <objects name="Enemy">
+      <object>objects\obj_enemy</object>
+    </objects>
+    <objects name="Other">
+      <object>objects\obj_timer</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_level_1</room>
   </rooms>
-  <constants number="13">
+  <constants number="15">
     <constant name="MASS_GOAL">1000</constant>
     <constant name="MAX_ENEMIES">500</constant>
     <constant name="OBJECT_ENEMY">obj_enemy</constant>
@@ -89,11 +121,13 @@
     <constant name="OBJECT_CAMERA">obj_camera</constant>
     <constant name="OBJECT_TIMER">obj_timer</constant>
     <constant name="OBJECT_PARTICLES">obj_particles</constant>
+    <constant name="OBJECT_MUSIC">obj_music</constant>
     <constant name="MOVEMENT_UP">ord("W")</constant>
     <constant name="MOVEMENT_DOWN">ord("S")</constant>
     <constant name="MOVEMENT_LEFT">ord("A")</constant>
     <constant name="MOVEMENT_RIGHT">ord("D")</constant>
     <constant name="FONT">fnt_normal</constant>
+    <constant name="MUSIC">snd_music</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

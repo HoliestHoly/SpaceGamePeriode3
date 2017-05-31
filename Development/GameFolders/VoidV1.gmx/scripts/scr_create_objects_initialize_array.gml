@@ -9,6 +9,7 @@ objectArray[0] = OBJECT_SPAWNER;
 objectArray[1] = OBJECT_CAMERA;
 objectArray[2] = noone; //OBJECT_TIMER;
 objectArray[3] = OBJECT_PARTICLES;
+objectArray[4] = OBJECT_MUSIC;
 
 // This is an array within objects that needs a position to be specified
 

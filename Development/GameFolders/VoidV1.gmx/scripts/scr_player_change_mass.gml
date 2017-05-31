@@ -2,7 +2,7 @@
 image_xscale = massImageScaler;
 image_yscale = massImageScaler;*/
 
-if mass >= 400 && mass < 600 {
+if mass >= 400 && mass < 800 {
     if sprite_index != spr_player_2 {
         sprite_index = spr_player_2;
         fix = physics_fixture_create();
