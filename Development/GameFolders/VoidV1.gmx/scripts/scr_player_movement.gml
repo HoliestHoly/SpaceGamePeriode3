@@ -38,11 +38,6 @@ if(!keyboard_check(MOVEMENT_UP) && !keyboard_check(MOVEMENT_DOWN)){
 phy_position_x += xMoveSpeedCurrent;
 phy_position_y += yMoveSpeedCurrent;
 
-//debug
-if(keyboard_check(ord("R"))){
-    room_restart();
-}
-
 if phy_speed_x > 1 || phy_speed_x < -1 {
     phy_speed_x *= 0.95;
 } else {

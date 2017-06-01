@@ -11,9 +11,12 @@ massRangeInstaKill = mass / 2;
 //image_yscale = massImageScaler;
 playerOffsetX = 500;
 playerOffsetY = 500;
+image_speed = 0;
+image_index = 0;
+paused = false;
 
 fix = physics_fixture_create();
-physics_fixture_set_circle_shape(fix, mass/2);
+physics_fixture_set_circle_shape(fix, sprite_width/3);
 physics_fixture_set_density(fix, 20);
 physics_fixture_set_friction(fix, 10);
 physics_fixture_bind(fix, self);

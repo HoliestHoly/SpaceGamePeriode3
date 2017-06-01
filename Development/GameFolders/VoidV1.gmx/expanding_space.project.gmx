@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sounds name="Music">
       <sound>sound\snd_music</sound>
+      <sound>sound\snd_music_menu</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -17,6 +18,7 @@
       <sprite>sprites\spr_player_4</sprite>
       <sprite>sprites\spr_player_5</sprite>
       <sprite>sprites\spr_player_6</sprite>
+      <sprite>sprites\spr_player_blackhole</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -29,11 +31,19 @@
       <sprite>sprites\spr_enemy_3</sprite>
       <sprite>sprites\spr_enemy_4</sprite>
     </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_quit</sprite>
+    </sprites>
     <sprites name="Other">
       <sprite>sprites\spr_cloud</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Menu">
+      <background>background\bck_logo</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Spawner">
@@ -85,6 +95,15 @@
     <scripts name="Music">
       <script>scripts\scr_music_initialize.gml</script>
     </scripts>
+    <scripts name="Menu">
+      <script>scripts\scr_menu_buttons_initialize.gml</script>
+      <scripts name="Start">
+        <script>scripts\scr_start_update.gml</script>
+      </scripts>
+      <scripts name="Quit">
+        <script>scripts\scr_quit_update.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <fonts name="Normal Fonts">
@@ -108,12 +127,17 @@
     <objects name="Other">
       <object>objects\obj_timer</object>
     </objects>
+    <objects name="Menu">
+      <object>objects\obj_start</object>
+      <object>objects\obj_quit</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_level_1</room>
   </rooms>
-  <constants number="15">
-    <constant name="MASS_GOAL">1000</constant>
+  <constants number="20">
+    <constant name="MASS_GOAL">5000</constant>
     <constant name="MAX_ENEMIES">500</constant>
     <constant name="OBJECT_ENEMY">obj_enemy</constant>
     <constant name="OBJECT_PLAYER">obj_player</constant>
@@ -122,12 +146,17 @@
     <constant name="OBJECT_TIMER">obj_timer</constant>
     <constant name="OBJECT_PARTICLES">obj_particles</constant>
     <constant name="OBJECT_MUSIC">obj_music</constant>
+    <constant name="OBJECT_START">obj_start</constant>
+    <constant name="OBJECT_QUIT">obj_quit</constant>
     <constant name="MOVEMENT_UP">ord("W")</constant>
     <constant name="MOVEMENT_DOWN">ord("S")</constant>
     <constant name="MOVEMENT_LEFT">ord("A")</constant>
     <constant name="MOVEMENT_RIGHT">ord("D")</constant>
     <constant name="FONT">fnt_normal</constant>
     <constant name="MUSIC">snd_music</constant>
+    <constant name="MUSIC_MENU">snd_music_menu</constant>
+    <constant name="LEVEL_1">rm_level_1</constant>
+    <constant name="MENU">rm_menu</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

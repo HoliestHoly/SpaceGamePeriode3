@@ -53,15 +53,30 @@ part_type_life(partType[5], 200, 800);
 part_type_color1(partType[5], c_white);
 part_type_sprite(partType[5], spr_cloud, false, true, true);
 
-partEmitter[1] = part_emitter_create(partSys[1]);
-part_emitter_region(partSys[1], partEmitter[1], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
-part_emitter_stream(partSys[1], partEmitter[1], partType[1], 10);
-partEmitter[2] = part_emitter_create(partSys[2]);
-part_emitter_region(partSys[2], partEmitter[2], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
-part_emitter_stream(partSys[2], partEmitter[2], partType[4], 2);
-partEmitter[3] = part_emitter_create(partSys[1]);
-part_emitter_region(partSys[1], partEmitter[3], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
-part_emitter_stream(partSys[1], partEmitter[3], partType[3], 1000);
-partEmitter[4] = part_emitter_create(partSys[1]);
-part_emitter_region(partSys[1], partEmitter[4], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
-part_emitter_stream(partSys[1], partEmitter[4], partType[5], -3);
+if room = LEVEL_1 {
+    partEmitter[1] = part_emitter_create(partSys[1]);
+    part_emitter_region(partSys[1], partEmitter[1], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[1], partEmitter[1], partType[1], 10);
+    partEmitter[2] = part_emitter_create(partSys[2]);
+    part_emitter_region(partSys[2], partEmitter[2], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[2], partEmitter[2], partType[4], 2);
+    /*partEmitter[3] = part_emitter_create(partSys[1]);
+    part_emitter_region(partSys[1], partEmitter[3], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[1], partEmitter[3], partType[3], 1000);*/
+    partEmitter[4] = part_emitter_create(partSys[1]);
+    part_emitter_region(partSys[1], partEmitter[4], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[1], partEmitter[4], partType[5], -3);
+} else if room = MENU {
+    partEmitter[1] = part_emitter_create(partSys[1]);
+    part_emitter_region(partSys[1], partEmitter[1], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[1], partEmitter[1], partType[1], -5);
+    partEmitter[2] = part_emitter_create(partSys[2]);
+    part_emitter_region(partSys[2], partEmitter[2], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[2], partEmitter[2], partType[4], -10);
+    partEmitter[3] = part_emitter_create(partSys[1]);
+    part_emitter_region(partSys[1], partEmitter[3], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[1], partEmitter[3], partType[3], 100);
+    partEmitter[4] = part_emitter_create(partSys[1]);
+    part_emitter_region(partSys[1], partEmitter[4], 0-100, room_width+100, -10, room_height + 10, ps_shape_rectangle, ps_distr_linear);
+    part_emitter_stream(partSys[1], partEmitter[4], partType[5], -50);
+}
