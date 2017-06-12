@@ -1,8 +1,9 @@
 if(paused = false){
-
-scr_player_movement();
-scr_player_change_mass();
+    scr_player_movement();
+    scr_player_change_mass();
 }
+
+scr_player_check_change();
 
 /*if(keyboard_check(vk_enter))
 {

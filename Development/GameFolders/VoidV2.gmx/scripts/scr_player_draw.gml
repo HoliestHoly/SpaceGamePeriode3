@@ -1,5 +1,7 @@
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
 
+scr_player_check_change();
+
 draw_set_color(c_white);
 draw_set_font(FONT);
 draw_set_halign(fa_left);

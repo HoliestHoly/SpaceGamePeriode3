@@ -1,3 +1,7 @@
+﻿
+
+draw_sprite(sprite_index, image_index, x,y);
+
 if(changingFirst = 1){
     if(alpha < 1)
     {
