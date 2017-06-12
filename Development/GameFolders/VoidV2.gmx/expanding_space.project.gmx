@@ -87,7 +87,6 @@
       <script>scripts\scr_player_collision_enemy.gml</script>
       <scripts name="Update">
         <script>scripts\scr_player_movement.gml</script>
-        <script>scripts\scr_player_change_mass.gml</script>
         <script>scripts\scr_player_check_change.gml</script>
       </scripts>
     </scripts>
