@@ -4,8 +4,9 @@ image_yscale = massImageScaler;*/
 
 if mass >= 400 && mass < 800 {
     if sprite_index != spr_player_2 {
-        physics_pause_enable(true);
-        paused = true;
+        scr_text("This is a test (text) box", 0.5, x+100, y);
+        //physics_pause_enable(true);
+        //paused = true;
         sprite_index = spr_player_2;
         fix = physics_fixture_create();
         physics_fixture_set_circle_shape(fix, sprite_width/3);

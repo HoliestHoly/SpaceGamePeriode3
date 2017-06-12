@@ -23,7 +23,6 @@
       <sprite>sprites\spr_player_blackhole</sprite>
     </sprites>
     <sprites name="Enemy">
-      <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_enemy_small_1</sprite>
       <sprite>sprites\spr_enemy_small_2</sprite>
       <sprite>sprites\spr_enemy_small_3</sprite>
@@ -39,6 +38,7 @@
     </sprites>
     <sprites name="Other">
       <sprite>sprites\spr_cloud</sprite>
+      <sprite>sprites\spr_line</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -106,6 +106,9 @@
         <script>scripts\scr_quit_update.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Text">
+      <script>scripts\scr_text.gml</script>
+    </scripts>
     <script>scripts\draw_path_sprite.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -129,6 +132,7 @@
     </objects>
     <objects name="Other">
       <object>objects\obj_timer</object>
+      <object>objects\obj_text</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_start</object>
@@ -139,7 +143,7 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_level_1</room>
   </rooms>
-  <constants number="20">
+  <constants number="21">
     <constant name="MASS_GOAL">5000</constant>
     <constant name="MAX_ENEMIES">500</constant>
     <constant name="OBJECT_ENEMY">obj_enemy</constant>
@@ -160,6 +164,7 @@
     <constant name="MUSIC_MENU">snd_music_menu</constant>
     <constant name="LEVEL_1">rm_level_1</constant>
     <constant name="MENU">rm_menu</constant>
+    <constant name="LINE">spr_line</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
