@@ -20,6 +20,7 @@
       <sprite>sprites\spr_player_4</sprite>
       <sprite>sprites\spr_player_5</sprite>
       <sprite>sprites\spr_player_6</sprite>
+      <sprite>sprites\spr_player_blackhole_old</sprite>
       <sprite>sprites\spr_player_blackhole</sprite>
     </sprites>
     <sprites name="Enemy">
@@ -88,6 +89,7 @@
       <scripts name="Update">
         <script>scripts\scr_player_movement.gml</script>
         <script>scripts\scr_player_change_mass.gml</script>
+        <script>scripts\scr_player_check_change.gml</script>
       </scripts>
     </scripts>
     <scripts name="Particles">

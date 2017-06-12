@@ -24,7 +24,7 @@ draw_text(view_xview[0]+32, view_yview[0]+100+32*1, view_wview[0]);
 draw_text(view_xview[0]+32, view_yview[0]+100+32*2, view_hview[0]);*/
 
 //feitje stage 1
-if paused = true && OBJECT_PLAYER.mass < 500 && OBJECT_PLAYER.mass > 300 {
+/*if paused = true && OBJECT_PLAYER.mass < 500 && OBJECT_PLAYER.mass > 300 {
 draw_set_font(FONT);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

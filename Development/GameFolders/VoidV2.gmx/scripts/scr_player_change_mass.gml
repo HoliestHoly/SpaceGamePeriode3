@@ -4,9 +4,10 @@ image_yscale = massImageScaler;*/
 
 if mass >= 400 && mass < 800 {
     if sprite_index != spr_player_2 {
+        alpha = 0;
+        changingFirst = 1;
         physics_pause_enable(true);
         paused = true;
-        sprite_index = spr_player_2;
         fix = physics_fixture_create();
         physics_fixture_set_circle_shape(fix, sprite_width/3);
         physics_fixture_set_density(fix, 20);
@@ -18,9 +19,12 @@ if mass >= 400 && mass < 800 {
 
 if mass >= 800 && mass < 1500 {
     if sprite_index != spr_player_3 {
+        alpha = 0;
+        changingFirst = 0;
+        changingSecond = 1;
         physics_pause_enable(true);
         paused = true;
-        sprite_index = spr_player_3;
+        
         fix = physics_fixture_create();
         physics_fixture_set_circle_shape(fix, sprite_width/3);
         physics_fixture_set_density(fix, 20);
@@ -32,9 +36,13 @@ if mass >= 800 && mass < 1500 {
 
 if mass >= 1500 && mass < 3000 {
     if sprite_index != spr_player_4 {
+        alpha = 0;
+        changingFirst = 0;
+        changingSecond = 0;
+        changingThird = 1;
         physics_pause_enable(true);
         paused = true;
-        sprite_index = spr_player_4;
+   
         fix = physics_fixture_create();
         physics_fixture_set_circle_shape(fix, sprite_width/3);
         physics_fixture_set_density(fix, 20);
@@ -46,9 +54,14 @@ if mass >= 1500 && mass < 3000 {
 
 if mass >= 3000 && mass < 6000 {
     if sprite_index != spr_player_5 {
+        alpha = 0;
+        changingFirst = 0;
+        changingSecond = 0;
+        changingThird = 0;
+        changingFourth = 1;
         physics_pause_enable(true);
         paused = true;
-        sprite_index = spr_player_5;
+
         fix = physics_fixture_create();
         physics_fixture_set_circle_shape(fix, sprite_width/3);
         physics_fixture_set_density(fix, 20);
@@ -60,9 +73,15 @@ if mass >= 3000 && mass < 6000 {
 
 if mass >= 6000 && mass < 10000{
     if sprite_index != spr_player_6 {
+        alpha = 0;
+        changingFirst = 0;
+        changingSecond = 0;
+        changingThird = 0;
+        changingFourth = 0;
+        changingFifth = 1;
         physics_pause_enable(true);
         paused = true;
-        sprite_index = spr_player_6;
+   
         fix = physics_fixture_create();
         physics_fixture_set_circle_shape(fix, sprite_width/3);
         physics_fixture_set_density(fix, 20);
