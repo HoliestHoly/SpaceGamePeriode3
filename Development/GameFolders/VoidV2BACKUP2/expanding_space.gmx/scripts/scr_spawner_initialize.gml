@@ -1,0 +1,1 @@
+maxEnemies = 500;
