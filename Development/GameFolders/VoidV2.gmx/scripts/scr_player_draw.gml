@@ -14,16 +14,8 @@ draw_line(x+sprite_width/2-20, y-sprite_height/2+20, x+sprite_width/2, y-sprite_
 //draw_set_color(c_blue);
 //draw_circle(x, y, mass/2, true);
 
-draw_set_color(c_blue);
-draw_rectangle(0, 0, room_width, room_height, true);
-
-draw_set_color(c_red);
-draw_rectangle(playerOffsetX, playerOffsetY, room_width-playerOffsetX, room_height-playerOffsetY, true);
-
-/*draw_set_color(c_aqua);
+draw_set_color(c_aqua);
 draw_text(view_xview[0]+32, view_yview[0]+100, fps);
-draw_text(view_xview[0]+32, view_yview[0]+100+32*1, view_wview[0]);
-draw_text(view_xview[0]+32, view_yview[0]+100+32*2, view_hview[0]);*/
 
 /*
 //feitje stage 1
