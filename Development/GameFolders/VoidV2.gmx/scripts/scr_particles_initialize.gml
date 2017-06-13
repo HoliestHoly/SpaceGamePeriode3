@@ -32,6 +32,7 @@ part_type_speed(partType[4], 0.5, 1, 0, 0);
 part_type_direction(partType[4], 0, 360, 0, 4);
 part_type_life(partType[4], 300, 500);
 part_type_color1(partType[4], c_white);
+part_type_alpha3(partType[4], 0, 1, 0);
 
 // collision
 partType[2] = part_type_create();
