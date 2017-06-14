@@ -1,1 +1,3 @@
-maxEnemies = 500;
+maxEnemies = 5000;
+//offset = room_width[0]*5;
+offset = 0;

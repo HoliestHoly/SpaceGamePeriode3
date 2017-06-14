@@ -9,6 +9,7 @@ if(changingFirst = 1){
         alpha += alphaReduction;
         draw_sprite_ext(spr_player_2, 0, x, y, imageScaleStart_1, imageScaleStart_1, 0, c_white, alpha);
     } else {
+        draw_sprite_ext(spr_player_2, 0, x, y, imageScaleStart_1, imageScaleStart_1, 0, c_white, alpha);
         sprite_index = spr_player_2;
         changingFirst = 0;
         physics_pause_enable(false);

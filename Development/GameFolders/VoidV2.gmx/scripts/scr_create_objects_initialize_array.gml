@@ -33,7 +33,7 @@ if room = rm_level_1 {
     objectPositionedArray[0, 0] = OBJECT_START;
     objectPositionedArray[0, 1] = 100;
     objectPositionedArray[0, 2] = 400;
-    objectPositionedArray[1, 0] = OBJECT_QUIT;
+    /*objectPositionedArray[1, 0] = OBJECT_QUIT;
     objectPositionedArray[1, 1] = 100;
-    objectPositionedArray[1, 2] = 600;
+    objectPositionedArray[1, 2] = 600;*/
 }

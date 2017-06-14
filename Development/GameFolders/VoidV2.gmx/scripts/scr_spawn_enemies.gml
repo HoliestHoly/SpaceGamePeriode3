@@ -1,7 +1,7 @@
 if maxEnemies > 0 {
     do {
-        var spawnX = random(room_width);
-        var spawnY = random(room_height);
+        var spawnX = random_range(-offset, room_width + offset);
+        var spawnY = random_range(-offset, room_height + offset);
         
         
     }

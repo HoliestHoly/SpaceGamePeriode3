@@ -20,10 +20,13 @@ if(paused = false){
     }
 }*/
 
-if !instance_exists(OBJECT_ENEMY) {
+/*if !instance_exists(OBJECT_ENEMY) {
     show_message("THE END");
     with OBJECT_PARTICLES {
         instance_destroy();
     }
     room_goto(MENU);
-}
+}*/
+
+instance_deactivate_object(OBJECT_ENEMY);
+instance_activate_region(view_xview[0]-100,view_yview[0]-100,view_wview[0]+200,view_hview[0]+200,true);

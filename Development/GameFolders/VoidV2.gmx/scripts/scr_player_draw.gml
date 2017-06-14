@@ -10,7 +10,6 @@ draw_text(x+sprite_width/2, y-sprite_height/2, "Mass: " + string(floor(mass)));
 draw_line(x+sprite_width/2, y-sprite_height/2+2, x+sprite_width/2+150, y-sprite_height/2+2);
 draw_line(x+sprite_width/2-20, y-sprite_height/2+20, x+sprite_width/2, y-sprite_height/2+2);
 
-
 //draw_set_color(c_blue);
 //draw_circle(x, y, mass/2, true);
 
