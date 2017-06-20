@@ -1,3 +1,4 @@
-maxEnemies = 5000;
+
 //offset = room_width[0]*5;
-offset = 0;
+offset = 100;
+timer = room_speed * 2;

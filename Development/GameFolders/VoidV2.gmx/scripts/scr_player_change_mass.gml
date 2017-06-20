@@ -6,7 +6,7 @@ if mass >= 400 && mass < 800 {
     if sprite_index != spr_player_2 {
         alpha = 0;
         changingFirst = 1;
-        scr_text("Test", 0.5, x+100, y+100);
+        scr_text("Een ster ontstaat uit gaswolken die door de zwaartekracht bijeen worden gedreven", 0.5, x+100, y+100);
         physics_pause_enable(true);
         paused = true;
         fix = physics_fixture_create();
@@ -23,6 +23,7 @@ if mass >= 800 && mass < 1500 {
         alpha = 0;
         changingFirst = 0;
         changingSecond = 1;
+        scr_text("Maar 15% van alle sterren in ons melkwegstelsel zijn van hetzelfde type als onze zon", 0.5, x+100, y+100);
         physics_pause_enable(true);
         paused = true;
         
@@ -41,6 +42,7 @@ if mass >= 1500 && mass < 3000 {
         changingFirst = 0;
         changingSecond = 0;
         changingThird = 1;
+        scr_text("Het sterven van een ster noemen wij een super- of een hypernova", 0.5, x+100, y+100);
         physics_pause_enable(true);
         paused = true;
    
@@ -60,6 +62,7 @@ if mass >= 3000 && mass < 6000 {
         changingSecond = 0;
         changingThird = 0;
         changingFourth = 1;
+        scr_text("De kracht van een hypernova explosie is 100 keer zo sterk als een supernova", 0.5, x+100, y+100);
         physics_pause_enable(true);
         paused = true;
 
@@ -80,6 +83,7 @@ if mass >= 6000 && mass < 10000{
         changingThird = 0;
         changingFourth = 0;
         changingFifth = 1;
+        scr_text("Er bestaan zwarte gaten die duizenden keren zo zwaar zijn als onze zon, hoe die zijn ontstaan weten we niet", 0.5, x+100, y+100);
         physics_pause_enable(true);
         paused = true;
    

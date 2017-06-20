@@ -28,6 +28,7 @@ if(changingSecond = 1){
         draw_sprite_ext(spr_player_3, 0, x, y, imageScaleStart_2, imageScaleStart_2, 0, c_white, alpha);
         
     } else {
+        draw_sprite_ext(spr_player_3, 0, x, y, imageScaleStart_2, imageScaleStart_2, 0, c_white, alpha);
         sprite_index = spr_player_3;
         changingFirst = 0;
         changingSecond = 0;
@@ -48,6 +49,7 @@ if(changingThird = 1){
         draw_sprite_ext(spr_player_4, 0, x, y, imageScaleStart_3, imageScaleStart_3, 0, c_white, alpha);
         
     } else {
+        draw_sprite_ext(spr_player_4, 0, x, y, imageScaleStart_3, imageScaleStart_3, 0, c_white, alpha);
         sprite_index = spr_player_4;
         changingFirst = 0;
         changingSecond = 0;
@@ -68,6 +70,7 @@ if(changingFourth = 1){
         draw_sprite_ext(spr_player_5, 0, x, y, imageScaleStart_4, imageScaleStart_4, 0, c_white, alpha);
         
     } else {
+        draw_sprite_ext(spr_player_5, 0, x, y, imageScaleStart_4, imageScaleStart_4, 0, c_white, alpha);
         sprite_index = spr_player_5;
         changingFirst = 0;
         changingSecond = 0;
@@ -90,6 +93,7 @@ if(changingFifth = 1){
         draw_sprite_ext(spr_player_6, 0, x, y, imageScaleStart_5 , imageScaleStart_5 , 0, c_white, alpha);
         
     } else {
+        draw_sprite_ext(spr_player_6, 0, x, y, imageScaleStart_5 , imageScaleStart_5 , 0, c_white, alpha);
         sprite_index = spr_player_6;
         changingFirst = 0;
         changingSecond = 0;

@@ -15,7 +15,7 @@ with other {
     if OBJECT_PLAYER.mass > mass {
         if mass <= OBJECT_PLAYER.massRangeInstaKill {
             OBJECT_PLAYER.mass += mass / 5;
-            OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass / 3;
+            OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass;
             part_particles_create(obj_particles.partSys[1], x, y, obj_particles.partType[2], 25);
             instance_destroy();
         } else {
