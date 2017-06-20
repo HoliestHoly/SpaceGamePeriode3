@@ -15,12 +15,16 @@ with other {
     if OBJECT_PLAYER.mass > mass {
         if mass <= OBJECT_PLAYER.massRangeInstaKill {
             OBJECT_PLAYER.mass += mass / 5;
+            var obj = instance_create(x+10, y-10, obj_getmass);
+            obj.txt = "+" + string(mass/5);
             OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass / 3;
             part_particles_create(obj_particles.partSys[1], x, y, obj_particles.partType[2], 25);
             instance_destroy();
         } else {
             mass -= massReductionEnemy;
             OBJECT_PLAYER.mass += massReductionEnemy;
+            var obj = instance_create(x+10, y-10, obj_getmass);
+            obj.txt = "+" + string(massReductionEnemy);
         }
     } else if(mass > OBJECT_PLAYER.mass){
         mass += massReduction;
