@@ -2,6 +2,11 @@ draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, 
 
 scr_player_check_change();
 
+if wasd_alpha > 0 {
+    wasd_alpha -= wasd_alpha_reduce;
+    draw_sprite_ext(spr_wasd, 0, x, y, 0.5, 0.5, 0, c_white, wasd_alpha);
+}
+
 draw_set_color(c_white);
 draw_set_font(FONT);
 draw_set_halign(fa_left);

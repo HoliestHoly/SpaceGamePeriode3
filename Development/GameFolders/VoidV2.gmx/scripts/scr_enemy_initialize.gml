@@ -1,4 +1,5 @@
 smallMass = random(10);
+alpha = 0;
 
 if(OBJECT_PLAYER.mass < 250){
     smallMass = random(10);

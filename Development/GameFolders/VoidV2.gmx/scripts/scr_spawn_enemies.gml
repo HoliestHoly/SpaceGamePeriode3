@@ -1,4 +1,6 @@
 
+
+
 if timer <= 0 {
     //if maxEnemies > 0 {
         do {
@@ -6,10 +8,19 @@ if timer <= 0 {
             var spawnY = random_range(view_yview[0] - offset, view_yview[0]+view_hview[0] + offset);
 
 
+
         }
         until((spawnX < view_xview[0]) || (spawnX > view_xview[0] + view_wview[0]) || spawnY < view_yview[0]) || (spawnY > view_yview[0] + view_hview[0])
 
       /*  if maxEnemies <= 100 {
+
+            
+            
+        }
+        until((spawnX < view_xview[0]) || (spawnX > view_xview[0] + view_wview[0]) || spawnY < view_yview[0]) || (spawnY > view_yview[0] + view_hview[0])
+        
+        /*if maxEnemies <= 100 {
+
             var obj = instance_create(spawnX, spawnY, objectEnemy);
             obj.depth = 5;
             obj.alpha = 1;
@@ -31,7 +42,13 @@ if timer <= 0 {
             obj.alpha = 0;
         }*/
 
+
         var obj = instance_create(spawnX, spawnY, OBJECT_ENEMY);
+
+
+        
+        var obj = instance_create(spawnX, spawnY, OBJECT_ENEMY);
+        
 
         //maxEnemies--;
         timer = room_speed*2;
