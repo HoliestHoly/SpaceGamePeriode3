@@ -40,6 +40,7 @@
       <sprite>sprites\spr_cloud</sprite>
       <sprite>sprites\spr_line</sprite>
       <sprite>sprites\spr_collision</sprite>
+      <sprite>sprites\spr_wasd</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -71,6 +72,7 @@
       <script>scripts\scr_enemy_initialize.gml</script>
       <script>scripts\scr_enemy_update.gml</script>
       <script>scripts\scr_enemy_draw.gml</script>
+      <script>scripts\draw_path_sprite.gml</script>
       <scripts name="Update">
         <script>scripts\scr_enemy_outside_room.gml</script>
         <script>scripts\scr_enemy_change_mass.gml</script>
@@ -115,7 +117,11 @@
     <scripts name="Text">
       <script>scripts\scr_text.gml</script>
     </scripts>
-    <script>scripts\draw_path_sprite.gml</script>
+    <scripts name="Getmass">
+      <script>scripts\scr_getmass_initialize.gml</script>
+      <script>scripts\scr_getmass_update.gml</script>
+      <script>scripts\scr_getmass_draw.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <fonts name="Normal Fonts">
@@ -139,6 +145,7 @@
     <objects name="Other">
       <object>objects\obj_timer</object>
       <object>objects\obj_text</object>
+      <object>objects\obj_getmass</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_start</object>
