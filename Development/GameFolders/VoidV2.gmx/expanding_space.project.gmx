@@ -36,6 +36,7 @@
     <sprites name="Menu">
       <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_menu_animation</sprite>
     </sprites>
     <sprites name="Other">
       <sprite>sprites\spr_cloud</sprite>
@@ -152,6 +153,7 @@
     <objects name="Menu">
       <object>objects\obj_start</object>
       <object>objects\obj_quit</object>
+      <object>objects\obj_menu_animation</object>
     </objects>
   </objects>
   <rooms name="rooms">

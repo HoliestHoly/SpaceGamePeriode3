@@ -25,10 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index &gt; 78)
+            <string>if (image_index &gt;= image_number - 1)
 {
+
   instance_destroy();
 }
+
+
 </string>
           </argument>
         </arguments>
