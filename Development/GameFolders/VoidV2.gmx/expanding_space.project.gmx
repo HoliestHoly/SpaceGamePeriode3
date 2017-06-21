@@ -88,13 +88,13 @@
     <scripts name="Player">
       <script>scripts\scr_player_initialize.gml</script>
       <script>scripts\scr_player_update.gml</script>
+      <script>scripts\scr_player_draw.gml</script>
       <script>scripts\scr_player_collision_enemy.gml</script>
       <scripts name="Update">
         <script>scripts\scr_player_movement.gml</script>
         <script>scripts\scr_player_check_change.gml</script>
         <script>scripts\scr_player_change_mass.gml</script>
       </scripts>
-      <script>scripts\scr_player_draw.gml</script>
     </scripts>
     <scripts name="Particles">
       <script>scripts\scr_particles_initialize.gml</script>
@@ -160,7 +160,7 @@
     <room>rooms\rm_menu</room>
     <room>rooms\rm_level_1</room>
   </rooms>
-  <constants number="21">
+  <constants number="22">
     <constant name="MASS_GOAL">5000</constant>
     <constant name="MAX_ENEMIES">500</constant>
     <constant name="OBJECT_ENEMY">obj_enemy</constant>
@@ -172,6 +172,7 @@
     <constant name="OBJECT_MUSIC">obj_music</constant>
     <constant name="OBJECT_START">obj_start</constant>
     <constant name="OBJECT_QUIT">obj_quit</constant>
+    <constant name="OBJECT_LOGO">obj_menu_animation</constant>
     <constant name="MOVEMENT_UP">ord("W")</constant>
     <constant name="MOVEMENT_DOWN">ord("S")</constant>
     <constant name="MOVEMENT_LEFT">ord("A")</constant>

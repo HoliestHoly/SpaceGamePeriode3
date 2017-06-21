@@ -31,9 +31,9 @@ if room = rm_level_1 {
     objectPositionedArray[0, 2] = room_height/2;
 } else if room = rm_menu {
     objectPositionedArray[0, 0] = OBJECT_START;
-    objectPositionedArray[0, 1] = 100;
-    objectPositionedArray[0, 2] = 400;
-    /*objectPositionedArray[1, 0] = OBJECT_QUIT;
-    objectPositionedArray[1, 1] = 100;
-    objectPositionedArray[1, 2] = 600;*/
+    objectPositionedArray[0, 1] = room_width/2 - sprite_get_width(spr_start) /2;
+    objectPositionedArray[0, 2] = room_height/2 + 250 - sprite_get_height(spr_start) /2;
+    objectPositionedArray[1, 0] = OBJECT_LOGO;
+    objectPositionedArray[1, 1] = room_width/2;
+    objectPositionedArray[1, 2] = room_height/2 - 250;
 }
