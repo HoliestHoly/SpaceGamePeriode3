@@ -1,5 +1,5 @@
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
-draw_sprite_ext(spr_collision, 0, x, y, sprite_width/1000, sprite_height/1000, 0, c_white, 1);
+//draw_sprite_ext(spr_collision, 0, x, y, sprite_width/1000, sprite_height/1000, point_direction(x, y, point_x, point_y), c_white, 1);
 
 scr_player_check_change();
 

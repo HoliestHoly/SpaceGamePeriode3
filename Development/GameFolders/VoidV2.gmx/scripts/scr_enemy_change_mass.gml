@@ -38,7 +38,7 @@ if mass >= 1500 && mass < 3000 {
     }
 }
 
-if mass >= 3000 && mass <= 6000 {
+if mass >= 3000 && mass <= 8000 {
     if sprite_index != spr_enemy_4 {
         sprite_index = spr_enemy_4;
         fix = physics_fixture_create();

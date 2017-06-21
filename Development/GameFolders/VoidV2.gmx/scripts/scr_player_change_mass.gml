@@ -99,7 +99,6 @@ if mass >= 6000 && mass < 10000{
 if mass >= 10000 {
     if sprite_index != spr_player_blackhole {
    instance_create(OBJECT_PLAYER.x, OBJECT_PLAYER.y, obj_supernova);
-   show_message("I'm activating")
         physics_pause_enable(true);
         paused = true;
         sprite_index = spr_player_blackhole;

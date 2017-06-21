@@ -1,10 +1,3 @@
-
-
-//offset = room_width[0]*5;
-offset = 100;
+offset = 500;
+offset_small = sprite_get_width(spr_enemy_4);
 timer = room_speed * 2;
-
-//maxEnemies = 5000;
-offset = 100;
-timer = room_speed*2;
-

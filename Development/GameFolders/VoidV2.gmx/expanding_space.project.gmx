@@ -161,7 +161,7 @@
     <room>rooms\rm_level_1</room>
   </rooms>
   <constants number="22">
-    <constant name="MASS_GOAL">5000</constant>
+    <constant name="MASS_GOAL">8000</constant>
     <constant name="MAX_ENEMIES">500</constant>
     <constant name="OBJECT_ENEMY">obj_enemy</constant>
     <constant name="OBJECT_PLAYER">obj_player</constant>

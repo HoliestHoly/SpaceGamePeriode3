@@ -1,10 +1,10 @@
 smallMass = random(10);
 alpha = 0;
 
-if(OBJECT_PLAYER.mass < 250){
-    smallMass = random(10);
-    if smallMass <= 7 {
-        mass = random_range(10, 200);
+if(OBJECT_PLAYER.mass < 1000){
+    smallMass = random(100);
+    if smallMass <= 70 {
+        mass = random_range(10, OBJECT_PLAYER.mass);
     } else {
         mass = random_range(0, MASS_GOAL);
     }
