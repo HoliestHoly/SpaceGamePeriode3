@@ -21,6 +21,7 @@
       <sprite>sprites\spr_player_5</sprite>
       <sprite>sprites\spr_player_6</sprite>
       <sprite>sprites\spr_player_blackhole</sprite>
+      <sprite>sprites\spr_player_supernova</sprite>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_small_1</sprite>
@@ -138,6 +139,7 @@
     <objects name="Player">
       <object>objects\obj_player</object>
       <object>objects\obj_camera</object>
+      <object>objects\obj_supernova</object>
     </objects>
     <objects name="Enemy">
       <object>objects\obj_enemy</object>

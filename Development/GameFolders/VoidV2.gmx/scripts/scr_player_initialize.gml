@@ -6,7 +6,7 @@ xMoveSpeedCurrent = 0;
 mass = 100;
 massImageScaler = mass / 1000;
 massRange = mass / 20;
-massRangeInstaKill = mass / 2;
+massRangeInstaKill = mass;
 //image_xscale = massImageScaler;
 //image_yscale = massImageScaler;
 playerOffsetX = 500;
@@ -30,6 +30,7 @@ imageScaler = 0.01;
 spriteToDraw = spr_player_1;
 wasd_alpha = 1;
 wasd_alpha_reduce = 0.002;
+playSupernova = true;
 
 fix = physics_fixture_create();
 physics_fixture_set_circle_shape(fix, sprite_width/3);

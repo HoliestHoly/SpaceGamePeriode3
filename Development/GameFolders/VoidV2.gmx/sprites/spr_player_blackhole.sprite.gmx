@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>69</bbox_left>
-  <bbox_right>625</bbox_right>
-  <bbox_top>64</bbox_top>
-  <bbox_bottom>626</bbox_bottom>
+  <bbox_left>25</bbox_left>
+  <bbox_right>674</bbox_right>
+  <bbox_top>28</bbox_top>
+  <bbox_bottom>675</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -85,5 +85,74 @@
     <frame index="62">images\spr_player_blackhole_62.png</frame>
     <frame index="63">images\spr_player_blackhole_63.png</frame>
     <frame index="64">images\spr_player_blackhole_64.png</frame>
+    <frame index="65">images\spr_player_blackhole_65.png</frame>
+    <frame index="66">images\spr_player_blackhole_66.png</frame>
+    <frame index="67">images\spr_player_blackhole_67.png</frame>
+    <frame index="68">images\spr_player_blackhole_68.png</frame>
+    <frame index="69">images\spr_player_blackhole_69.png</frame>
+    <frame index="70">images\spr_player_blackhole_70.png</frame>
+    <frame index="71">images\spr_player_blackhole_71.png</frame>
+    <frame index="72">images\spr_player_blackhole_72.png</frame>
+    <frame index="73">images\spr_player_blackhole_73.png</frame>
+    <frame index="74">images\spr_player_blackhole_74.png</frame>
+    <frame index="75">images\spr_player_blackhole_75.png</frame>
+    <frame index="76">images\spr_player_blackhole_76.png</frame>
+    <frame index="77">images\spr_player_blackhole_77.png</frame>
+    <frame index="78">images\spr_player_blackhole_78.png</frame>
+    <frame index="79">images\spr_player_blackhole_79.png</frame>
+    <frame index="80">images\spr_player_blackhole_80.png</frame>
+    <frame index="81">images\spr_player_blackhole_81.png</frame>
+    <frame index="82">images\spr_player_blackhole_82.png</frame>
+    <frame index="83">images\spr_player_blackhole_83.png</frame>
+    <frame index="84">images\spr_player_blackhole_84.png</frame>
+    <frame index="85">images\spr_player_blackhole_85.png</frame>
+    <frame index="86">images\spr_player_blackhole_86.png</frame>
+    <frame index="87">images\spr_player_blackhole_87.png</frame>
+    <frame index="88">images\spr_player_blackhole_88.png</frame>
+    <frame index="89">images\spr_player_blackhole_89.png</frame>
+    <frame index="90">images\spr_player_blackhole_90.png</frame>
+    <frame index="91">images\spr_player_blackhole_91.png</frame>
+    <frame index="92">images\spr_player_blackhole_92.png</frame>
+    <frame index="93">images\spr_player_blackhole_93.png</frame>
+    <frame index="94">images\spr_player_blackhole_94.png</frame>
+    <frame index="95">images\spr_player_blackhole_95.png</frame>
+    <frame index="96">images\spr_player_blackhole_96.png</frame>
+    <frame index="97">images\spr_player_blackhole_97.png</frame>
+    <frame index="98">images\spr_player_blackhole_98.png</frame>
+    <frame index="99">images\spr_player_blackhole_99.png</frame>
+    <frame index="100">images\spr_player_blackhole_100.png</frame>
+    <frame index="101">images\spr_player_blackhole_101.png</frame>
+    <frame index="102">images\spr_player_blackhole_102.png</frame>
+    <frame index="103">images\spr_player_blackhole_103.png</frame>
+    <frame index="104">images\spr_player_blackhole_104.png</frame>
+    <frame index="105">images\spr_player_blackhole_105.png</frame>
+    <frame index="106">images\spr_player_blackhole_106.png</frame>
+    <frame index="107">images\spr_player_blackhole_107.png</frame>
+    <frame index="108">images\spr_player_blackhole_108.png</frame>
+    <frame index="109">images\spr_player_blackhole_109.png</frame>
+    <frame index="110">images\spr_player_blackhole_110.png</frame>
+    <frame index="111">images\spr_player_blackhole_111.png</frame>
+    <frame index="112">images\spr_player_blackhole_112.png</frame>
+    <frame index="113">images\spr_player_blackhole_113.png</frame>
+    <frame index="114">images\spr_player_blackhole_114.png</frame>
+    <frame index="115">images\spr_player_blackhole_115.png</frame>
+    <frame index="116">images\spr_player_blackhole_116.png</frame>
+    <frame index="117">images\spr_player_blackhole_117.png</frame>
+    <frame index="118">images\spr_player_blackhole_118.png</frame>
+    <frame index="119">images\spr_player_blackhole_119.png</frame>
+    <frame index="120">images\spr_player_blackhole_120.png</frame>
+    <frame index="121">images\spr_player_blackhole_121.png</frame>
+    <frame index="122">images\spr_player_blackhole_122.png</frame>
+    <frame index="123">images\spr_player_blackhole_123.png</frame>
+    <frame index="124">images\spr_player_blackhole_124.png</frame>
+    <frame index="125">images\spr_player_blackhole_125.png</frame>
+    <frame index="126">images\spr_player_blackhole_126.png</frame>
+    <frame index="127">images\spr_player_blackhole_127.png</frame>
+    <frame index="128">images\spr_player_blackhole_128.png</frame>
+    <frame index="129">images\spr_player_blackhole_129.png</frame>
+    <frame index="130">images\spr_player_blackhole_130.png</frame>
+    <frame index="131">images\spr_player_blackhole_131.png</frame>
+    <frame index="132">images\spr_player_blackhole_132.png</frame>
+    <frame index="133">images\spr_player_blackhole_133.png</frame>
   </frames>
 </sprite>

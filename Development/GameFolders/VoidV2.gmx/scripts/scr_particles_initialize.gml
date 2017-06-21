@@ -46,7 +46,7 @@ part_type_size(partType[2], 0.5, 1, 0, 0);
 part_type_speed(partType[2], 0.4, 1, 0, 0);
 part_type_direction(partType[2], 0, 360, 0, 4);
 part_type_life(partType[2], 100, 300);
-part_type_color1(partType[2], c_white);
+part_type_color1(partType[2], c_gray);
 part_type_alpha3(partType[2], 0, 1, 0);
 
 // clouds
