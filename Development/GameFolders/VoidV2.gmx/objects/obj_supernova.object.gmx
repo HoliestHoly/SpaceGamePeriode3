@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index &gt; image_number - 1)
+            <string>if (image_index &gt; 78)
 {
   instance_destroy();
 }
@@ -51,7 +51,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite_index, image_index, x, y, 2.5, 2.5, 0, c_white, 1);
+            <string>draw_sprite_ext(sprite_index, image_index, x, y, 2.8, 2.8, 0, c_white, 1);
 </string>
           </argument>
         </arguments>
