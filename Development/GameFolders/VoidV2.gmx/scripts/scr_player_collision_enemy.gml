@@ -5,24 +5,19 @@ var massReductionEnemy = other.mass / 100;
 
 with other {
     if mass >= OBJECT_PLAYER.mass - OBJECT_PLAYER.massRange {
-        phy_speed_x = spdx/5;
+        /*phy_speed_x = spdx/5;
         phy_speed_y = spdy/5;
         if phy_speed_x = 0 && phy_speed_y = 0 {
             phy_speed_x = random_range(-20, 20);
             phy_speed_y = random_range(-20, 20);
-        }
+        }*/
     }
     if OBJECT_PLAYER.mass > mass {
         if mass <= OBJECT_PLAYER.massRangeInstaKill {
-
-            OBJECT_PLAYER.mass += mass * 4;
-            OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass/3;
-
-            OBJECT_PLAYER.mass += mass / 5;
+            OBJECT_PLAYER.mass += mass / 4;
             var obj = instance_create(x+10, y-10, obj_getmass);
             obj.txt = "+" + string(mass/5);
             OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass / 3;
-
             part_particles_create(obj_particles.partSys[1], x, y, obj_particles.partType[2], 25);
             instance_destroy();
         } else {

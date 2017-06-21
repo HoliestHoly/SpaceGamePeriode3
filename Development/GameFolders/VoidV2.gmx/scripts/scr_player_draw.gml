@@ -8,6 +8,7 @@ if wasd_alpha > 0 {
     draw_sprite_ext(spr_wasd, 0, x, y, 0.5, 0.5, 0, c_white, wasd_alpha);
 }
 
+draw_set_alpha(1);
 draw_set_color(c_white);
 draw_set_font(FONT);
 draw_set_halign(fa_left);
