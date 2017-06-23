@@ -18,17 +18,7 @@ if distance_to_object(OBJECT_PLAYER) < 300 {
     path_add_point(path,0,0,0);
     path_add_point(path,OBJECT_PLAYER.x-x,OBJECT_PLAYER.y-y,0);
     path_set_closed(path,false);
-    //draw_path_sprite(path, x, y, 32, LINE, 0, 32, 32, c_white, 1, 2, true);
-    
-    draw_set_alpha(alpha*2);
-    draw_set_color(c_white);
-    draw_set_font(FONT);
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_bottom);
-    draw_text(x+sprite_width/2, y-sprite_height/2, "Mass: " + string(floor(mass)));
-    draw_line(x+sprite_width/2, y-sprite_height/2+2, x+sprite_width/2+150, y-sprite_height/2+2);
-    draw_line(x+sprite_width/2-20, y-sprite_height/2+20, x+sprite_width/2, y-sprite_height/2+2);
-    
+    //draw_path_sprite(path, x, y, 32, LINE, 0, 32, 32, c_white, 1, 2, true); 
 } else {
     if alpha > 0 {
         alpha -= 0.02;
@@ -36,6 +26,15 @@ if distance_to_object(OBJECT_PLAYER) < 300 {
         alpha = 0;
     }
 }
+
+draw_set_alpha(alpha*2);
+draw_set_color(c_white);
+draw_set_font(FONT);
+draw_set_halign(fa_left);
+draw_set_valign(fa_bottom);
+draw_text(x+sprite_width/2, y-sprite_height/2, "Mass: " + string(floor(mass)));
+draw_line(x+sprite_width/2, y-sprite_height/2+2, x+sprite_width/2+150, y-sprite_height/2+2);
+draw_line(x+sprite_width/2-20, y-sprite_height/2+20, x+sprite_width/2, y-sprite_height/2+2);
 
 if mass >= OBJECT_PLAYER.mass {
     draw_set_alpha(alpha);

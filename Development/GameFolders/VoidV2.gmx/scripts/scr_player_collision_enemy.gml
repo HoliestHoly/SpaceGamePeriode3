@@ -34,6 +34,12 @@ with other {
 
 point_x = other.x;
 point_y = other.y;
+if collision_alpha < 1 {
+    collision_alpha += collision_alpha_increase;
+} else {
+    collision_alpha = 1;
+}
+collision_rotation = point_direction(x, y, point_x, point_y);
 
 if other.mass >= mass - massRange {
     phy_speed_x = -spdx/5;

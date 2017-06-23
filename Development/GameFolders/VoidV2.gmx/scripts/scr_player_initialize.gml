@@ -33,6 +33,10 @@ wasd_alpha_reduce = 0.002;
 playSupernova = true;
 point_x = 0;
 point_y = 0;
+collision_alpha = 0;
+collision_alpha_increase = 1;
+collision_alpha_decrease = 0.02;
+collision_rotation = 0;
 
 fix = physics_fixture_create();
 physics_fixture_set_circle_shape(fix, sprite_width/3);
