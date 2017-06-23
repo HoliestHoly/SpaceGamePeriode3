@@ -14,7 +14,7 @@ with other {
     }
     if OBJECT_PLAYER.mass > mass {
         if mass <= OBJECT_PLAYER.massRangeInstaKill {
-            OBJECT_PLAYER.mass += mass / 4;
+            OBJECT_PLAYER.mass += mass * 4;
             //var obj = instance_create(x+10, y-10, obj_getmass);
             //obj.txt = "+" + string(mass/5);
             OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass / 3;
