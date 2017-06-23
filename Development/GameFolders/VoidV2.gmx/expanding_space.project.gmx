@@ -78,6 +78,7 @@
       <scripts name="Update">
         <script>scripts\scr_enemy_outside_room.gml</script>
         <script>scripts\scr_enemy_change_mass.gml</script>
+        <script>scripts\scr_enemy_goto_player.gml</script>
       </scripts>
     </scripts>
     <scripts name="Timer">
@@ -94,6 +95,9 @@
         <script>scripts\scr_player_movement.gml</script>
         <script>scripts\scr_player_check_change.gml</script>
         <script>scripts\scr_player_change_mass.gml</script>
+      </scripts>
+      <scripts name="Supernova">
+        <script>scripts\scr_supernova_update.gml</script>
       </scripts>
     </scripts>
     <scripts name="Particles">

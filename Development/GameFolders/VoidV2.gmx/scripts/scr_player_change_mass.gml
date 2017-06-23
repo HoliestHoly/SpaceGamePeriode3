@@ -101,6 +101,7 @@ if mass >= 10000 {
    instance_create(OBJECT_PLAYER.x, OBJECT_PLAYER.y, obj_supernova);
         physics_pause_enable(true);
         paused = true;
+        blackhole = true;
         sprite_index = spr_player_blackhole;
         image_speed = 1;
         fix = physics_fixture_create();

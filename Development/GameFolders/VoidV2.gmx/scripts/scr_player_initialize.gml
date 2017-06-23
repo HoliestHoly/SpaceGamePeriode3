@@ -37,6 +37,7 @@ collision_alpha = 0;
 collision_alpha_increase = 1;
 collision_alpha_decrease = 0.02;
 collision_rotation = 0;
+blackhole = false;
 
 fix = physics_fixture_create();
 physics_fixture_set_circle_shape(fix, sprite_width/3);
