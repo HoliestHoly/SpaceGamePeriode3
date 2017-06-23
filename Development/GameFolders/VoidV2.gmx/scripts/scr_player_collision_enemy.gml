@@ -3,6 +3,15 @@ var spdy = yMoveSpeedCurrent;
 var massReduction = mass / 100;
 var massReductionEnemy = other.mass / 100;
 
+point_x = other.x;
+point_y = other.y;
+if collision_alpha < 1 {
+    collision_alpha += collision_alpha_increase;
+} else {
+    collision_alpha = 1;
+}
+collision_rotation = point_direction(x, y, point_x, point_y);
+
 with other {
     if mass >= OBJECT_PLAYER.mass - OBJECT_PLAYER.massRange {
         /*phy_speed_x = spdx/5;
@@ -31,15 +40,6 @@ with other {
         OBJECT_PLAYER.mass -= massReduction;
     }
 }
-
-point_x = other.x;
-point_y = other.y;
-if collision_alpha < 1 {
-    collision_alpha += collision_alpha_increase;
-} else {
-    collision_alpha = 1;
-}
-collision_rotation = point_direction(x, y, point_x, point_y);
 
 if other.mass >= mass - massRange {
     phy_speed_x = -spdx/5;

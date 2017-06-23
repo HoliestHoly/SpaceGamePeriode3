@@ -36,4 +36,6 @@ if keyboard_check_pressed(ord("R")) {
 instance_deactivate_object(OBJECT_ENEMY);
 instance_activate_region(view_xview[0]-100,view_yview[0]-100,view_wview[0]+200,view_hview[0]+200,true);
 
-collision_alpha -= collision_alpha_decrease;
+if collision_alpha > 0 {
+    collision_alpha -= collision_alpha_decrease;
+}
