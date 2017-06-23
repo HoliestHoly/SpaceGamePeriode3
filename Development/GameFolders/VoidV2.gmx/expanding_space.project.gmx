@@ -89,7 +89,7 @@
     <scripts name="Player">
       <script>scripts\scr_player_initialize.gml</script>
       <script>scripts\scr_player_update.gml</script>
-      <script>scripts\scr_player_draw.gml</script>
+      <script>scripts\scr_player_collision_enemy.gml</script>
       <script>scripts\scr_player_collision_enemy.gml</script>
       <scripts name="Update">
         <script>scripts\scr_player_movement.gml</script>
