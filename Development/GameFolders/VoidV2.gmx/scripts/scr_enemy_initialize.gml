@@ -36,6 +36,12 @@ image_yscale = massImageScaler;*/
 blackhole = false;
 xs = 0;
 ys = 0;
+collision_alpha = 0;
+collision_alpha_increase = 1;
+collision_alpha_decrease = 0.02;
+collision_rotation = 0
+point_x = 0;
+point_y = 0;
 
 if(OBJECT_PLAYER.blackhole){
         fix = physics_fixture_create();
