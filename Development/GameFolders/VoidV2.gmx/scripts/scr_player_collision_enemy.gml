@@ -21,9 +21,9 @@ with other {
             phy_speed_y = random_range(-20, 20);
         }*/
     }
-    if OBJECT_PLAYER.mass > mass {
-        if mass <= OBJECT_PLAYER.massRangeInstaKill {
-            OBJECT_PLAYER.mass += mass * 4;
+    if OBJECT_PLAYER.mass > mass || blackhole {
+        if (mass <= OBJECT_PLAYER.massRangeInstaKill || blackhole){
+            OBJECT_PLAYER.mass += mass / 3;
             //var obj = instance_create(x+10, y-10, obj_getmass);
             //obj.txt = "+" + string(mass/5);
             OBJECT_PLAYER.massRangeInstaKill = OBJECT_PLAYER.mass / 3;

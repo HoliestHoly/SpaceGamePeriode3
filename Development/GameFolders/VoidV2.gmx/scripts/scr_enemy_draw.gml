@@ -27,6 +27,7 @@ if distance_to_object(OBJECT_PLAYER) < 300 {
     }
 }
 
+if !OBJECT_PLAYER.blackhole {
 draw_set_alpha(alpha*2);
 draw_set_color(c_white);
 draw_set_font(FONT);
@@ -35,6 +36,7 @@ draw_set_valign(fa_bottom);
 draw_text(x+sprite_width/2, y-sprite_height/2, "Mass: " + string(floor(mass)));
 draw_line(x+sprite_width/2, y-sprite_height/2+2, x+sprite_width/2+150, y-sprite_height/2+2);
 draw_line(x+sprite_width/2-20, y-sprite_height/2+20, x+sprite_width/2, y-sprite_height/2+2);
+}
 
 if mass >= OBJECT_PLAYER.mass {
     draw_set_alpha(alpha);
@@ -54,4 +56,15 @@ if mass >= OBJECT_PLAYER.mass {
 
 draw_set_alpha(1);
 
-draw_self();
+if !OBJECT_PLAYER.blackhole {
+    draw_self();
+} else {
+    var angle = arctan(ys/xs);
+
+    draw_sprite_ext(sprite_index, image_index, x, y,
+    xs * (point_distance(x, y, OBJECT_PLAYER.x, OBJECT_PLAYER.y) / 500),
+    xs * (point_distance(x, y, OBJECT_PLAYER.x, OBJECT_PLAYER.y) / 500),
+    angle, c_white, 1);
+    
+    
+}

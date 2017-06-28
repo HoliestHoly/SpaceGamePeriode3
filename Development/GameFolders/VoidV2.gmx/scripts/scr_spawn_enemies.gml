@@ -16,7 +16,14 @@ if timer <= 0 {
         
 
         //maxEnemies--;
-        timer = room_speed*2;
+
+        if(OBJECT_PLAYER.blackhole){
+        timer = blackholeRoomSpeed;
+        blackholeRoomSpeed += 0.08;
+        
+        } else {
+             timer = room_speed;
+        }
     //}
 }
 

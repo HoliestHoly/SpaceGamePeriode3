@@ -1,5 +1,9 @@
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
+
+
+if(blackhole == false){
 draw_sprite_ext(spr_collision, 0, x, y, sprite_width/1000, sprite_height/1000, collision_rotation, c_white, collision_alpha);
+}
 
 scr_player_check_change();
 

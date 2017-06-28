@@ -1,5 +1,6 @@
 smallMass = random(10);
 alpha = 0;
+enemyGoToSpeed = 10;
 
 if(OBJECT_PLAYER.mass < 4000){
     smallMass = random(100);
@@ -33,12 +34,23 @@ massImageScaler = mass / 1000;
 /*image_xscale = massImageScaler;
 image_yscale = massImageScaler;*/
 blackhole = false;
+xs = 0;
+ys = 0;
 
-fix = physics_fixture_create();
-physics_fixture_set_circle_shape(fix, sprite_width/3);
-physics_fixture_set_density(fix, 0.5);
-physics_fixture_bind(fix, self);
-physics_fixture_delete(fix);
+if(OBJECT_PLAYER.blackhole){
+        fix = physics_fixture_create();
+        physics_fixture_set_circle_shape(fix, sprite_width/20);
+        physics_fixture_set_density(fix, 0.5);
+        physics_fixture_bind(fix, self);
+        physics_fixture_delete(fix);
+        phy_active = false;
+} else {
+        fix = physics_fixture_create();
+        physics_fixture_set_circle_shape(fix, sprite_width/3);
+        physics_fixture_set_density(fix, 0.5);
+        physics_fixture_bind(fix, self);
+        physics_fixture_delete(fix);
+}
 
 phy_speed_x = random_range(-4, 4);
 phy_speed_y = random_range(-4, 4);

@@ -79,6 +79,7 @@
         <script>scripts\scr_enemy_outside_room.gml</script>
         <script>scripts\scr_enemy_change_mass.gml</script>
         <script>scripts\scr_enemy_goto_player.gml</script>
+        <script>scripts\scr_enemy_destroy.gml</script>
       </scripts>
     </scripts>
     <scripts name="Timer">

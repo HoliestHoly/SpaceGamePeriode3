@@ -30,13 +30,17 @@ if (!keyboard_check(MOVEMENT_LEFT) && !keyboard_check(MOVEMENT_RIGHT)) {
 if(!keyboard_check(MOVEMENT_UP) && !keyboard_check(MOVEMENT_DOWN)){
     yMoveSpeedCurrent *= moveSpeedDecFactor;
 }
-      
-      
-      
-      
-      
-phy_position_x += xMoveSpeedCurrent;
-phy_position_y += yMoveSpeedCurrent;
+    
+    
+    
+    
+if !blackhole {
+    phy_position_x += xMoveSpeedCurrent;
+    phy_position_y += yMoveSpeedCurrent;
+} else {
+    x += xMoveSpeedCurrent;
+    y += yMoveSpeedCurrent;
+}
 
 if phy_speed_x > 1 || phy_speed_x < -1 {
     phy_speed_x *= 0.95;

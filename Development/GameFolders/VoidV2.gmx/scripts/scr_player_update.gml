@@ -3,6 +3,9 @@ if(paused = false){
     scr_player_change_mass();
 }
 
+if(keyboard_check(ord("L")))
+    mass = 10001;
+
 /*if(keyboard_check(vk_enter))
 {
     if mass < 10000 {
