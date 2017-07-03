@@ -39,6 +39,15 @@ with other {
         mass += massReduction;
         OBJECT_PLAYER.mass -= massReduction;
     }
+    
+    point_x = OBJECT_PLAYER.x;
+    point_y = OBJECT_PLAYER.y;
+    if collision_alpha < 1 {
+        collision_alpha += collision_alpha_increase;
+    } else {
+        collision_alpha = 1;
+    }
+    collision_rotation = point_direction(x, y, point_x, point_y);
 }
 
 if other.mass >= mass - massRange {

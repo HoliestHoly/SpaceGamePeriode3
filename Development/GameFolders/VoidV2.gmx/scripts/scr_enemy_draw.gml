@@ -68,3 +68,7 @@ if !OBJECT_PLAYER.blackhole {
     
     
 }
+
+if(blackhole == false){
+    draw_sprite_ext(spr_collision, 0, x, y, sprite_width/1000, sprite_height/1000, collision_rotation, c_white, collision_alpha);
+}
