@@ -6,15 +6,15 @@ We made this game in Gamemaker!
   
 Devs: 
 
-*Casper Meloen
+*Casper Meloen, 
 Merlin Karmat*
   
   
 Artists:
   
   
-*Quinto Veldhuijzen
-Ubbo Nysingh
+*Quinto Veldhuijzen, 
+Ubbo Nysingh, 
 Tijmen Bruijn*
   
     
