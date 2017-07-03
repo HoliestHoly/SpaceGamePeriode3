@@ -24,5 +24,12 @@ draw_line(x+sprite_width/2-20, y-sprite_height/2+20, x+sprite_width/2, y-sprite_
 //draw_set_color(c_blue);
 //draw_circle(x, y, mass/2, true);
 
-draw_set_color(c_aqua);
-draw_text(view_xview[0]+32, view_yview[0]+100, fps);
+//draw_set_color(c_aqua);
+//draw_text(view_xview[0]+32, view_yview[0]+100, fps);
+
+if(mass < 20){
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_color(c_white);
+draw_text(x, y-160, "je massa is te klein geworden druk op 'r' om te restarten");
+}
