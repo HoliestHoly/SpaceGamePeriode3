@@ -4,20 +4,17 @@ Welcome to the git repository of our first game: Void.
 We made this game in Gamemaker!
   
   
-Devs:
+Devs: 
+
 *Casper Meloen
-  
-  
 Merlin Karmat*
   
   
 Artists:
+  
+  
 *Quinto Veldhuijzen
-  
-  
 Ubbo Nysingh
-  
-  
 Tijmen Bruijn*
   
     
