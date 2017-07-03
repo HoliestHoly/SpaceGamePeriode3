@@ -1,0 +1,5 @@
+Technisch onderzoek. 
+ 
+Voor onze game (2D boven aspect) kozen we gamemaker. 
+Gamemaker is vooral een 2D engine wat ons handig leek. 
+Casper heeft al erg veel ervaring in Gamemaker en ik zelf vind Gamemaker erg fijn werken. 
