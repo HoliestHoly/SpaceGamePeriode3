@@ -33,3 +33,10 @@ draw_set_valign(fa_middle);
 draw_set_color(c_white);
 draw_text(x, y-160, "je massa is te klein geworden druk op 'r' om te restarten");
 }
+
+if(game_finish){
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_color(c_white);
+draw_text(x, y-160, "Druk op 'r' om de game te resetten");
+}

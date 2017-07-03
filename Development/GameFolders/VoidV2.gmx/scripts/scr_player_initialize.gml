@@ -39,6 +39,8 @@ collision_alpha_decrease = 0.02;
 collision_rotation = 0;
 
 blackhole = false;
+blackhole_timer = room_speed * 30;
+game_finish = false;
 
 
 fix = physics_fixture_create();
